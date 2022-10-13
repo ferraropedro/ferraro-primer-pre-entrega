@@ -1,19 +1,22 @@
 import React from 'react';
 import CartWidget from './CardWidget';
 
+
 const Navbar = () => {
     return (
         <nav>
-
-            <h1>Bicicletas Lucifer</h1>
+            <a href="/">
+                <h1>Bicicletas Lucifer</h1>
+            </a>
             <ul>
-                <li> <a href="">Montaña</a></li>
-                <li> <a href="">Ruta</a></li>
-                <li> <a href="">Urbanas</a></li>
-                <li> <a href="">Contacto</a></li>
+             <a href="/category/montaña">Montaña</a> 
+             <a href="/category/clasica">clasica</a> 
+             <a href="/category/urbana">Urbanas</a> 
+             <a href="#">Contacto</a> 
             </ul>
+            <a href="/cart">
             <CartWidget />
-
+            </a>
         </nav>
     );
 };
